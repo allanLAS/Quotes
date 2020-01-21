@@ -9,7 +9,7 @@
                         <li>
                             <h4> <span class="badge badge-secondary"> Quote </span> {{ quote.quote }} </h4>
                             
-                             <h6> <span class="badge badge-secondary"> Posted</span> {{quote.postDate|timeAgo}} </h6>
+                             <h6> <span class="badge badge-secondary"> Posted.</span> {{quote.postDate|timeAgo}} </h6>
                         </li>
                         <button class=" btn btn-danger" (click)="toggleDetails(i)"> More Details</button>
                         <app-quote-detail
