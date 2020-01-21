@@ -9,12 +9,12 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[]=  [
-    new Quote(1, 'It’s not about ideas. It’s about making ideas happen.', 'Omosh the Geek',new Date(2018,3,14)),
-    new Quote(2,'The most courageous act is still to think for yourself. Aloud.','Apolo Mboya',new Date(2016,6,9)),
-    new Quote(3,'Don’t be intimidated by what you don’t know. That can be your greatest strength and ensure that you do things differently from everyone else.','Bazenga Wanumbernane',new Date(2007,1,12)),
-    new Quote(4,'Fearlessness is like a muscle. I know from my own life that the more I exercise it, the more natural it becomes to not let my fears run me.','Wise Foolness',new Date(2019,0,18)),
-    new Quote(5,'One does not discover new lands without consenting to lose sight of the shore for a very long time.','Odhiambo Mapesa',new Date(2019,2,14)),
-    new Quote(6,'Plot my world domination plan','Cause I am an evil overlord',new Date(2018,3,14)),
+    new Quote(1, 'I believe you can speak things into existence.', 'Jay z',new Date(2018,1,1)),
+    new Quote(2,"Don't be afraid to give up the good to go for the great.",'John D. Rockerfeller',new Date(2017,6,8)),
+    new Quote(3,'Regardless of how it goes down, life goes on','Rick Ross',new Date(2019,1,12)),
+    new Quote(4,'We make a living by what we get, but we make a life by what we give.','Winston Churchill',new Date(2019,2,19)),
+    new Quote(5,'Study hard so that you can master technology, which allows us to master nature.','Che Guevara',new Date(2019,4,20)),
+    new Quote(6,'The reason children accept discpline from their parents is because they know their parents love them.','Nipsey Hussle',new Date(2018,1,1)),
   ];
 
   toggleDetails(index){
