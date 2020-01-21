@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  
+
+  <div class="row">
+      <div class="col-md-6 bg-light ">
+          <h1 class="text-center bg-info">Most Viewed Quotes</h1>
+          <div *ngFor="let quote of quotes; let i = index">
+                <ul id="qt" >
+                        <li>
+                            <h4> <span class="badge badge-secondary"> Quote </span> {{ quote.quote }} </h4>
+                            
+                             <h6> <span class="badge badge-secondary"> Posted</span> {{quote.postDate|timeAgo}} </h6>
+                        </li>
+                        <button class=" btn btn-danger" (click)="toggleDetails(i)"> More Details</button>
+                        <app-quote-detail
+                          *ngIf="quote.showDescription"
+                          [quote]="quote"
+                          (isComplete)="completeQuote($event, i)"
+                        >
+                        </app-quote-detail>
+                      </ul>
+
+          </div>
+
+      </div>
+
+      <div class="col-md-6">
+            
+            <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+          </div>
+
+  </div>
+  
+
+  
+</div>
